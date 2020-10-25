@@ -1,31 +1,41 @@
 os: linux
-dist: xenial
+
 language: node_js
 node_js:
   - "8"
   - "10"
-  - "11"
   - "12"
-env:
-  - CXX=g++-4.8
-addons:
-  apt:
-    sources:
-    - ubuntu-toolchain-r-test
-    packages:
-    - g++-4.8
+
 env:
   global:
     - DISPLAY=:99.0
-  matrix:
-    - CXX=g++-4.8 TEST_SUITE=test
+
 matrix:
   fast_finish: true
   include:
     - os: linux
       node_js: "10"
-      env: CXX=g++-4.8 TEST_SUITE=coveralls
+      env: CXX=g++-4.8 
+      
     - os: linux
       node_js: "10"
       env: CXX=g++-4.8 TEST_SUITE=lint
-script: npm run $TEST_SUITE
+      
+    - os: linux
+      compiler: linux-gcc7-release
+      addons: *gcc7
+      env: CC='gcc-7' CXX='g++-7' BUILD_TYPE='Release' TEST_SUITE=coveralls
+      dist: bionic
+      script: npm run $TEST_SUITE
+
+    - os: osx
+      osx_image: xcode11
+      node_js: "10"
+      compiler: xcode11-clang-release
+      env: CXX='clang++' BUILD_TYPE='Release' TEST_SUITE=coveralls
+
+    - os: osx
+      osx_image: xcode11
+      node_js: "12"
+      compiler: xcode11-clang-release
+      env: CXX='clang++' BUILD_TYPE='Release' TEST_SUITE=coveralls
