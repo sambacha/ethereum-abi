@@ -4,6 +4,7 @@
   "description": "Decoder and encoder for the Ethereum ABI",
   "main": "index.js",
   "dependencies": {
+    "@neburo/ethereumjs-util": "^6.2.1",
     "bn.js": "^4.11.8",
     "ethereumjs-util": "^6.0.0"
   },
@@ -17,8 +18,7 @@
   "scripts": {
     "coverage": "istanbul cover _mocha",
     "coveralls": "npm run coverage && coveralls <coverage/lcov.info",
-    "lint": "standard",
-    "prepublish": "npm run lint && npm run test",
+    "prepublish": " npm run test",
     "test": "istanbul test _mocha -- --reporter spec"
   },
   "husky": {
