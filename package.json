@@ -5,8 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "@neburo/ethereumjs-util": "^6.2.1",
-    "bn.js": "^4.11.8",
-    "ethereumjs-util": "^6.0.0"
+    "bn.js": "^4.11.8"
   },
   "devDependencies": {
     "coveralls": "^3.0.3",
@@ -21,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/axic/ethereumjs-abi.git"
+    "url": "git+https://github.com/sambacha/ethereumjs-abi.git"
   },
   "keywords": [
     "ethereum",
@@ -30,9 +29,9 @@
   "author": "Alex Beregszaszi <alex@rtfs.hu>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/axic/ethereumjs-abi/issues"
+    "url": "https://github.com/sambacha/ethereumjs-abi/issues"
   },
-  "homepage": "https://github.com/axic/ethereumjs-abi",
+  "homepage": "https://github.com/sambacha/ethereumjs-abi",
   "standard": {
     "globals": [
       "describe",
