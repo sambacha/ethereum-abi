@@ -1,5 +1,5 @@
 {
-  "name": "ethereumjs-abi",
+  "name": "ethjs-abi-updated",
   "version": "0.6.8",
   "description": "Decoder and encoder for the Ethereum ABI",
   "main": "index.js",
