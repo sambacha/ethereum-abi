@@ -1,11 +1,14 @@
-# ethereumjs-abi
+# ethereum-abi-lts
 
-[![NPM Package](https://img.shields.io/npm/v/ethereumjs-abi.svg?style=flat-square)](https://www.npmjs.org/package/ethereumjs-abi)
+
 [![Build Status](https://img.shields.io/travis/ethereumjs/ethereumjs-abi.svg?branch=master&style=flat-square)](https://travis-ci.org/ethereumjs/ethereumjs-abi)
 [![Coverage Status](https://img.shields.io/coveralls/ethereumjs/ethereumjs-abi.svg?style=flat-square)](https://coveralls.io/r/ethereumjs/ethereumjs-abi)
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
-[![Discord][discord-badge]][discord-link]
 
+
+![nodejs](https://github.com/sambacha/ethereum-abi-LTS/workflows/nodejs/badge.svg)
+
+
+> this fork is ment to provide updates
 
 Module implementing the [Ethereum ABI](https://github.com/ethereum/wiki/wiki/Ethereum-Contract-ABI) in Javascript. Can be used with RPC libraries for communication or with ethereumjs-vm to implement a fully fledged simulator.
 
