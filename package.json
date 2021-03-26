@@ -1,6 +1,6 @@
 {
-  "name": "ethereum-abi-lts",
-  "version": "0.8.0",
+  "name": "ethereumjs-abi",
+  "version": "0.8.1",
   "description": "Decoder and encoder for the Ethereum ABI",
   "main": "index.js",
   "dependencies": {
